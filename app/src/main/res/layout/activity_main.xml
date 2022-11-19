@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="340dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="36dp"
+        android:onClick="SeleccionarImagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24"
+        tools:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+    <EditText
+        android:id="@+id/TxtDescripcion"
+        android:layout_width="339dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <Button
+        android:id="@+id/BtnGuardar"
+        android:layout_width="341dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:onClick="guardarImagen"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtDescripcion" />
+
+    <Button
+        android:id="@+id/BtnImagenes"
+        android:layout_width="341dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:onClick="moveToShowActivity"
+        android:text="Imagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnGuardar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
